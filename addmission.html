@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College application form </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            background-color: #eaf4f4;
+
+        }
+
+        header {
+            background-color: #003049;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0px;
+            font-size: 25px;
+            color: white;
+            position: sticky;
+            top:0;
+            z-index: 100;
+        }
+
+        button {
+            display: block;
+            justify-content: center;
+            margin-top: 3px;
+            padding: 3px;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            background-color: #0077b6;
+            width: 9vh;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #023e8a;
+            transform: scale(1.20);
+        }
+
+
+        div {
+            justify-content: space-evenly;
+            margin: 8px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgb(181, 181, 252);
+        }
+
+        footer {
+            margin: 10px;
+            margin-top: 10px;
+            
+        }
+
+        #tac{
+            text-align: center;
+            margin-top: 100px;
+        }
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #003049;
+            text-decoration: underline rgb(1, 55, 130);
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            
+            margin-top: 3px;
+            padding: 3px;
+            border: 2px solid #999;
+            border-radius: 3px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        College Application form
+    </header>
+    <button onclick="history.go(-1)">&lt; Back</button>
+    <form action="submit.php" method="post">
+    <div>
+        <h2>
+
+            1. Student Details:-
+        </h2>
+
+        <ul>
+            <li><input type="text" name="Sname" id="std" placeholder="Enter student name" pattern="[a-zA-z]+" required
+                    autofocus><br></li>
+            <li><input type="text" name="fname" id="father" placeholder="Enter your father name"><br></li>
+
+
+            <li><input type="text" name="mname" id="mother" placeholder="Enter your mother name"><br></li>
+
+
+            <li><input type="number" name="pnum" id="phone" pattern="[0-9]{10}+" required placeholder="10-digit phone number"><br>
+            </li>
+
+
+            <li><input type="date" name="dob" id="dbirth"><br></li>
+
+
+            <li><input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </li>
+
+        </ul>
+
+    
+
+   
+        <h2>
+            2. Other required Details are: 
+        </h2>
+        <ol type="1">
+            <li><label for="caste">Cast:</label>
+                <select name="caste" id="caste">
+                    <option>Hindu</option>
+                    <option>Muslim</option>
+                    <option>Sikh</option>
+                    <option>Jain</option>
+                    <option>Christen</option>
+                </select><br>
+            </li>
+            <li><label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option>2A</option>
+                    <option>SC</option>
+                    <option>ST</option>
+                    <option>3A</option>
+                    <option> OBC</option>
+                    <option>2B</option>
+                </select><br>
+            </li>
+            <li><label for="hadd">Enter your Home address :</label><br>
+                <textarea name="add" id="hadd" rows="4" cols="25" placeholder="Enter your address"></textarea>
+            </li>
+            <li>
+                <label for="app">Applying Basis :</label>
+                <select name="basis" id="basis">
+                    <option>SSLC</option>
+                    <option>PUC</option>
+                    <option>ITI</option>
+                </select>
+            </li>
+            <li>
+                <label for="course">Course</label>
+                <select name="course" id="course">
+                    <option value="ncert">NCERT</option>
+                    <option value="cbse">CBSE</option>
+                    <option value="icse">ICSE</option>
+                </select>
+            </li>
+        </ol>
+    
+
+
+    
+        <h2>
+            3. Decalaration
+        </h2>
+
+        <input type="checkbox" name="ask" id="ask">
+        <label for="ask">I Declare that all above information is correct</label><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+   </div>
+    </form>
+    <footer id="tac">
+        <p>
+            All information while addmission application by the student must be correct. The college is not responsible for incorrect information and the Diploma certificate is printed on the basis of the information provided by the students while appliying the addmission form
+        </p>
+        <p>By submitting this form, the student agrees to follow all college rules and regulations.</p>
+        <p>© 2026 Government Polytechnic College. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

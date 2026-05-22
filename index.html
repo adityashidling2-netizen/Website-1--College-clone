@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page of our college</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            background: linear-gradient(to right, #dbeafe, #f0f9ff);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            background-color: #0a2f45;
+            color: white;
+            height: 50px;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        header img {
+            width: 50px;
+            border-radius: 50%;
+            align-items: self-end;
+        }
+
+        nav {
+            margin-top: 3px;
+            background-color: #114360;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 10px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 2px 2px 10px gray;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: rgb(231, 225, 225);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #7dd3fc;
+            transform: scale(1.1);
+        }
+
+        .detail {
+            background-color: white;
+            margin-top: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px gray;
+            padding: 20px;
+
+
+        }
+
+        main {
+            background-color: white;
+            padding: 8px;
+            margin-top: 9px;
+            margin: 9px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px gray;
+            overflow: scroll;
+        }
+
+        main p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h2 {
+
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+            color: #0a354d;
+        }
+
+
+        footer {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px gray;
+            margin-top: 8px;
+            margin: 9px;
+        }
+
+        .maincontainer h2 {
+            text-decoration: underline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+        .container {
+            background-color: #f9fcfd;
+            display: flex;
+            margin: 20px auto;
+            justify-content: center;
+            gap: 90px;
+            flex-wrap: wrap;
+            width: 80vw;
+            padding: 20px;
+            border-radius: 50px;
+            height: auto;
+
+        }
+
+        .container img {
+            width: 210px;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+            margin: 8px auto;
+            border-radius: 10px;
+        }
+
+        .img-box {
+            background-color: white;
+            width: 220px;
+            height: auto;
+            margin: 10px;
+            /* border: px solid black; */
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 10px rgb(160, 138, 250);
+            transition: 0.3s;
+
+        }
+
+        .img-box:hover {
+            z-index: 1;
+            transform: translateY(-8px);
+        }
+
+        .read-more-btn {
+            background-color: #ffffff;
+            color: #114360;
+            border-radius: 8px;
+            display: block;
+            margin: 6px auto;
+            transition: all 0.3s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #114360;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer button {
+            background-color: #0a354d;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px gray;
+            margin: 4px;
+        }
+
+        button:hover {
+            background-color: #19506d;
+        }
+
+        .footer {
+            margin-top: 100px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .footer p {
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        #pl {
+            margin-top: 10px;
+        }
+
+        /* ADD MEDIA QUERY HERE AT THE END */
+
+        @media(max-width:676px) {
+
+            header {
+                text-align: center;
+                padding: 20px;
+            }
+
+            header img {
+                margin-top: 10px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .footer p {
+                font-size: 10px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="https://image-static.collegedunia.com/public/college_data/images/logos/1598874083GPTHUBLILOGO.png"
+            alt="Government-logo">
+        Government Polytechnic College Hubli-580026
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHOM7i4jbSXN_pM23_D0y1mpYdzvKdzGtoSg&s"
+            alt="College-logo">
+    </header>
+    <nav>
+
+        <a href="home.html">🏠</a>
+        <a href="addmission.html">Application Form</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="department.html">Department</a>
+        <a href="">Activities</a>
+    </nav>
+    <div class="detail">
+        <h2>Welcome to our Government Polytechnic College</h2>
+        <p>
+            Government Polytechnic College is one of the leading educational institutions
+            providing quality education and excellent campus facilities
+            for students across different courses.
+        </p>
+    </div>
+    <div class="detail">
+
+        <h2>Vision</h2>
+
+        <p>
+            To become a center of excellence in technical education
+            and innovation.
+        </p>
+
+        <h2>Mission</h2>
+
+        <ul>
+            <li>Provide quality technical education</li>
+            <li>Develop practical and professional skills</li>
+            <li>Encourage innovation and creativity</li>
+            <li>Build responsible citizens</li>
+        </ul>
+
+    </div>
+    <main>
+        <h2> Facilities Available</h2>
+
+        <ol>
+            <li>Modern Computer Labs</li>
+            <li>Experienced Teaching Staff</li>
+            <li>Library with available books</li>
+            <li>Sports and Cultural Activities</li>
+            <li>Campus Placement Training</li>
+        </ol>
+        <h2>Courses Offered</h2>
+        <ol type="">
+            <li>Total Diploma Courses:- 4 After 10th Diploma programmes</li>
+            <li> Specialization Available:-
+                <pre style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">                 i. Diploma in civil Engineering, 
+                ii. Diploma in Computer Science Engineering, 
+               iii. Diploma in Mechanical Engineering, 
+                iv. Diploma in Electronic and Communication Engineering</pre>
+            </li>
+            <li>Duration:- 3 years for all diploma courses</li>
+            <li>Mode:- Full Time</li>
+        </ol>
+    </main>
+    <div class="detail">
+
+        <h2>Principal's Message</h2>
+
+        <p>
+            Welcome to Government Polytechnic College Hubballi.
+            Our institution is dedicated to providing quality
+            technical education and developing skilled professionals
+            for the future. We encourage students to participate
+            in academics, technical activities and innovation.
+        </p>
+
+    </div>
+    <div class="detail">
+
+        <h2>Placement Partners</h2>
+
+        <ul>
+            <li>TCS</li>
+            <li>Infosys</li>
+            <li>Wipro</li>
+            <li>Tech Mahindra</li>
+            <li>Capgemini</li>
+        </ul>
+
+    </div>
+    <div class="detail">
+
+        <h2>Campus Highlights</h2>
+
+        <p>
+            ✔ Smart Classrooms <br>
+            ✔ Digital Library <br>
+            ✔ Sports Facilities <br>
+            ✔ Wi-Fi Campus <br>
+            ✔ Technical Workshops
+        </p>
+
+    </div>
+    <div class="detail">
+
+        <h2>College Statistics</h2>
+
+        <ul>
+            <li>Total Students : 1200+</li>
+            <li>Departments : 4</li>
+            <li>Faculty Members : 60+</li>
+            <li>Placement Rate : 85%</li>
+        </ul>
+
+    </div>
+    <div class="maincontainer">
+        <h2>College Gallery</h2>
+        <div class="container">
+
+            <div class="img-box main">
+                <h4>College Main building</h4>
+                <img src="https://gpt.karnataka.gov.in/gpthubli/public/uploads/media_to_upload1650267445.png"
+                    loading="lazy" alt="college main building">
+                <p>
+                    Here's all office and class are build with interactive design
+                </p>
+                <button class="read-more-btn" onclick="toggleText(this)"> Read more</button>
+            </div>
+            <div class="img-box hostel">
+                <h4>Girls Hostel</h4>
+                <img src="https://gpt.karnataka.gov.in/gpthubli/public/uploads/media_to_upload1651224807.jpg"
+                    loading="lazy" alt="Girls hostel">
+                <p>Girls hostel with security and clean rooms and 3 per day mesh food</p>
+                <button class="read-more-btn" onclick="toggleText(this)"> Read more</button>
+            </div>
+            <div class="img-box Additional">
+                <h4>Additional Block</h4>
+                <img src="https://gpt.karnataka.gov.in/gpthubli/public/uploads/media_to_upload1651224545.jpg"
+                    loading="lazy" alt="Additional class room">
+                <p>Additional Block classes with good quality tools and system's with industry level practices</p>
+                <button class="read-more-btn" onclick="toggleText(this)"> Read more</button>
+            </div>
+            <div class="img-box hall">
+                <h4>Open hall</h4>
+                <img src="https://gpt.karnataka.gov.in/gpthubli/public/uploads/media_to_upload1651224971.jpg"
+                    loading="lazy" alt="Open hall">
+                <p>Open hall for immediate function on short notice or any announcement for the students </p>
+                <button class="read-more-btn" onclick="toggleText(this)"> Read more</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Addmissions Open 2026</h2>
+
+        <p>
+            Students can now apply for various undergraduate and diploma
+            courses through the online application form.
+        </p>
+
+        <button>
+            <a href="addmission.html">Apply Now</a>
+        </button>
+    </footer>
+    <div class="footer">
+        <!-- <h2>Terms and Conditions</h2> -->
+
+        <p>
+            Students must provide correct information while filling
+            the addmission form. Any incorrect information may lead
+            to cancellation of admission.
+        </p>
+
+        <p>
+            The college reserves the right to verify all submitted
+            documents and details.
+        </p>
+
+        <p>
+            By using this website, students agree to follow all
+            college rules and regulations.
+        </p>
+
+        <p id="pl">
+            © 2026 Government Polytechnic College Hubballi.
+            All Rights Reserved.
+        </p>
+    </div>
+
+</body>
+
+</html>
