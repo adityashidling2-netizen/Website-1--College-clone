@@ -18,8 +18,9 @@
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
+            text-align: center;
             font-size: 18px;
             background-color: #0a2f45;
             color: white;
@@ -27,11 +28,12 @@
             padding: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             box-shadow: 0px 0px 10px gray;
+            position: relative;
         }
 
         header img {
             width: 50px;
-            border-radius: 50%;
+            
             align-items: self-end;
         }
 
@@ -70,9 +72,11 @@
             margin: 10px;
             border-radius: 8px;
             box-shadow: 2px 2px 10px gray;
-            padding: 20px;
+            padding: 15px;
+        }
 
-
+        .detail p {
+            padding-left: 25px;
         }
 
         main {
@@ -93,10 +97,9 @@
 
         h2 {
 
-            text-align: center;
             padding: 10px;
-            margin: 0px;
             color: #0a354d;
+
         }
 
 
@@ -117,14 +120,14 @@
 
         .container {
             background-color: #f9fcfd;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             margin: 20px auto;
             justify-content: center;
-            gap: 90px;
-            flex-wrap: wrap;
+            gap: 20px;
             width: 80vw;
             padding: 20px;
-            border-radius: 50px;
+            border-radius: 20px;
             height: auto;
 
         }
@@ -143,7 +146,7 @@
             width: 220px;
             height: auto;
             margin: 10px;
-            /* border: px solid black; */
+            
             padding: 8px;
             border-radius: 10px;
             box-shadow: 2px 3px 10px rgb(160, 138, 250);
@@ -171,21 +174,29 @@
             transform: translateY(-3px);
         }
 
-        footer a {
+
+
+        .button {
+            display: inline-block;
+            background-color: #0a354d;
+            border-radius: 4px;
+            box-shadow: 2px 2px 10px rgb(210, 183, 251);
+            margin-top: 8px;
+            border: none;
+            padding: 4px 4px;
             color: white;
             text-decoration: none;
+            transition: 0.2s;
         }
 
-        footer button {
-            background-color: #0a354d;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px gray;
-            margin: 4px;
+        footer .button:hover {
+            background-color: rgb(177, 206, 253);
+            color: black;
+            transform: scale(1.09);
         }
 
-        button:hover {
-            background-color: #19506d;
+        footer p {
+            padding-left: 25px;
         }
 
         .footer {
@@ -197,6 +208,7 @@
         .footer p {
             font-style: italic;
             font-size: 14px;
+
         }
 
         #pl {
@@ -228,6 +240,11 @@
                 font-size: 10px;
             }
 
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     </style>
 
@@ -235,20 +252,19 @@
 
 <body>
     <header>
-        <img src="https://image-static.collegedunia.com/public/college_data/images/logos/1598874083GPTHUBLILOGO.png"
-            alt="Government-logo">
+        <img src="govt.jpeg" alt="Government-logo" id="govtlogo">
         Government Polytechnic College Hubli-580026
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHOM7i4jbSXN_pM23_D0y1mpYdzvKdzGtoSg&s"
-            alt="College-logo">
+            alt="College-logo" id="clglogo">
     </header>
     <nav>
 
-        <a href="index.html">🏠</a>
+        <a href="home.html">🏠</a>
         <a href="addmission.html">Application Form</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
         <a href="department.html">Department</a>
-        <a href="">Activities</a>
+        <a href="activities.html">Activities</a>
     </nav>
     <div class="detail">
         <h2>Welcome to our Government Polytechnic College</h2>
@@ -352,7 +368,9 @@
 
     </div>
     <div class="maincontainer">
-        <h2>College Gallery</h2>
+        <h1>
+            <center>College Gallery</center>
+        </h1>
         <div class="container">
 
             <div class="img-box main">
@@ -395,9 +413,7 @@
             courses through the online application form.
         </p>
 
-        <button>
-            <a href="addmission.html">Apply Now</a>
-        </button>
+        <a href="addmission.html" class="button">Apply Now</a>
     </footer>
     <div class="footer">
         <!-- <h2>Terms and Conditions</h2> -->
