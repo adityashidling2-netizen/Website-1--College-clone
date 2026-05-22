@@ -1,89 +1,110 @@
-*{
+* {
     margin: 0;
 }
-body{
+
+body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #dbeafe, #f0f9ff);
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     font-size: 18px;
     background-color: #0a2f45;
     color: white;
-    height: 50px;
+    height: 70px;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0px 0px 10px gray;
-    width: 100vw;
-}
-header img{
-    width: 50px;
-    border-radius: 50%;
-    align-items: self-end;
-}
-button{
-    margin-top: 3px;
-    background-color: #012052;
-    color: white;
-    border-radius: 18px;
-    box-shadow: 2px 2px 10px gray;
-    width: 10vh;
-    transition: 0.2s;
-}
-button:hover{
-    background-color: #9fa8da;
-    color: black;
-    transform: scale(1.10);
-}
-.std{
-    background-color: white;
-    margin: 15px;
-    text-align: center;
-    padding: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 10px ;
-    box-shadow: 3px 3px 10px rgb(176, 176, 255);
+    position: sticky;
+    top:0;
+    z-index: 1;
 
 }
-.std h1{
-    font-size: 1.5em;
+
+header img {
+    width: 50px;
+    align-items: self-end;
 }
-.activities{
+
+button {
+    margin-top: 3px;
+    margin: 4px;
+    background-color: #012052;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px gray;
+    width: 50px;
+    padding: 8px 12px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(177, 206, 253);
+    transform: scale(1.1);
+    color: black;
+}
+
+.std {
+    background-color: white;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(176, 176, 255);
+    
+}
+
+.std h1 {
+    color: #012052;
+}
+
+.activities {
     background-color: white;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgb(176, 176, 255);
 }
-.activities h2{
-    font-size: 1.1em;
+
+.activities h2 {
+    font-size: 20px;
+    color: #012052;
     margin-top: 6px;
     margin-bottom: 6px;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: underline;
+    
 }
-.activities p,li{
+
+.activities p,
+li {
     font-size: 0.9em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.photo{
+
+.photo {
     background-color: white;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgb(176, 176, 255);
 }
-.photo h2{
+
+.photo h2 {
     text-align: center;
-    font-size: 2em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #012052;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 6px;
 }
-.photo p{
+
+.photo p {
     font-size: 1.1em;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
 }
