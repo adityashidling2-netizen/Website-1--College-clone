@@ -112,6 +112,9 @@
 
         }
 
+        .sublist{
+            list-style: none;
+        }
 
         footer {
             background-color: white;
@@ -260,7 +263,7 @@
 
             nav a {
                 padding: 7px;
-                font-size: 10px;
+                font-size: 14px;
             }
 
             .footer p {
@@ -271,6 +274,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+            li{
+                font-size: 12px;
             }
         }
     </style>
@@ -331,13 +337,14 @@
             <li>Campus Placement Training</li>
         </ol>
         <h2>Courses Offered</h2>
-        <ol type="">
+        <ol >
             <li>Total Diploma Courses:- 4 After 10th Diploma programmes</li>
-            <li> Specialization Available:-
-                <pre style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">                 i. Diploma in civil Engineering, 
-                ii. Diploma in Computer Science Engineering, 
-               iii. Diploma in Mechanical Engineering, 
-                iv. Diploma in Electronic and Communication Engineering</pre>
+            <li id="sublist"> Specialization Available:-
+                <li class="sublist">i. Diploma in civil Engineering, </li>
+                <li class="sublist">ii. Diploma in Computer Science Engineering, 
+                </li>
+               <li class="sublist">iii. Diploma in Mechanical Engineering, </li>
+                <li class="sublist">iv. Diploma in Electronic and Communication Engineering</li>
             </li>
             <li>Duration:- 3 years for all diploma courses</li>
             <li>Mode:- Full Time</li>
